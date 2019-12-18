@@ -1,0 +1,3 @@
+Using the assets and the animated visual target above, build a Character Class Selection using Tiles and Buttons as defined by the style target.
+
+There are no style requirements other than the use of the shown Tile and Button components. Get creative with the rest of the screen, but show us how you would elabroate on the style of the Tiles and Buttons.
