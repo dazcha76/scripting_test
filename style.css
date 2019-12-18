@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'LOTR';
+    src: url(RINGM___.ttf);
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: 'LOTR';
+}
+
+h1 {
+  color: silver;
+  text-align: center;
+}
+
+#character-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.character {
+  width: 18vw;
+  background-position-x: center; 
+  background-position-y: 10%; 
+  background-repeat: no-repeat;
+  background-size: 90% auto;
+}
+
+.soldier {
+  background-position-y: 20%; 
+}
+
+.frame {
+  width: 100%;
+}
+
