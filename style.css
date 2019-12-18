@@ -17,24 +17,40 @@ body {
 h1 {
   color: silver;
   text-align: center;
+  margin: 4% 0;
 }
 
 #character-wrapper {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: center;
 }
 
 .character {
   width: 18vw;
-  background-position-x: center; 
+  background-position-x: 45%; 
   background-position-y: 10%; 
   background-repeat: no-repeat;
-  background-size: 90% auto;
+  background-size: 82% auto;
+  position: relative;
+}
+
+.adventurer,
+.expatriate,
+.explorer,
+.soldier,
+.stowaway {
+  opacity: 0.7;
+}
+
+.adventurer:hover,
+.expatriate:hover,
+.explorer:hover,
+.soldier:hover,
+.stowaway:hover {
+  opacity: 1;
 }
 
 .soldier {
@@ -43,5 +59,35 @@ h1 {
 
 .frame {
   width: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
+.frame:hover {
+  z-index: 0;
+}
+
+.active-frame {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.active-frame:hover {
+  z-index: 1;
+}
+
+.frame-shadow {
+  position: absolute;
+  width: 106%;
+  top: -31px;
+  left: -13px;
+}
+
+.hide {
+  z-index: 0;
+}
+
+.show {
+  z-index: 1;
+}
