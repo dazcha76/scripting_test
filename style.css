@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'LOTR';
-    src: url(RINGM___.ttf);
+  font-family: 'LOTR';
+  src: url(RINGM___.ttf);
 } 
 
 * {
@@ -12,10 +12,10 @@
 body {
   background-color: #000;
   font-family: 'LOTR';
+  color: silver;
 }
 
 h1 {
-  color: silver;
   text-align: center;
   margin: 4% 0;
 }
@@ -90,4 +90,8 @@ h1 {
 
 .show {
   z-index: 1;
+}
+
+.next-button {
+  
 }

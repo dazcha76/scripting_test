@@ -23,12 +23,19 @@ function displayCharacters(arr){
     activeFrame.classList.add('active-frame');
     characterContainer.appendChild(activeFrame);
 
-    document.getElementById('character-wrapper').appendChild(characterContainer);
+    document.getElementById('character-wrapper').appendChild(characterContainer);    
   }
 }
 
+function adjustHeight(){
+  let frameHeight = document.querySelector('.frame').height;
+  document.querySelector('.character').style.height = `${frameHeight}px`;
+}
+
+setTimeout(adjustHeight, 100);
+window.addEventListener("resize", adjustHeight);
+
 function selectCharacter(){
-  console.log(this.children);
   this.children[0].classList.add('hide');
   this.children[1].classList.add('show')
   this.removeEventListener('click', selectCharacter);
@@ -41,5 +48,8 @@ function selectCharacter(){
     frameShadow.classList.add('frame-shadow');
     this.appendChild(frameShadow);
   }
-  
+}
+
+function next(){
+  document.querySelector('.instructions').innerHTML = 'Player 2 - Choose a character:'
 }
