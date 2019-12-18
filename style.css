@@ -11,13 +11,15 @@
 
 body {
   background-color: #000;
-  font-family: 'LOTR';
   color: silver;
 }
 
-h1 {
+.player1,
+.player2,
+.play {
+  font-family: 'LOTR';
   text-align: center;
-  margin: 4% 0;
+  margin: 3% 0;
 }
 
 #character-wrapper {
@@ -35,6 +37,38 @@ h1 {
   background-repeat: no-repeat;
   background-size: 82% auto;
   position: relative;
+  cursor: pointer;
+}
+
+.character-details {
+  width: 100%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 77% 10% 5% 5%;
+  text-align: center;
+  align-items: end;
+}
+
+.character-description {
+  font-size: 12px;
+  padding: 0 30px 10px;
+}
+
+.character-name {
+  text-transform: uppercase;
+  padding: 10px 5px;
+  font-size: 18px;
+  background-image: url('./assets/class-select-nameplate-active.png');
+  background-size: 85% auto;
+  background-repeat: no-repeat;
+  background-position-x: center; 
+}
+
+.character-weapon1,
+.character-weapon2 {
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .adventurer,
@@ -79,9 +113,9 @@ h1 {
 
 .frame-shadow {
   position: absolute;
-  width: 106%;
-  top: -31px;
-  left: -13px;
+  width: 105%;
+  top: -9px;
+  left: -12px;
 }
 
 .hide {
@@ -92,6 +126,30 @@ h1 {
   z-index: 1;
 }
 
-.next-button {
-  
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.next-button,
+.start-button {
+  border: 1px solid silver;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 50px;
+  cursor: pointer;
+  font-family: 'LOTR';
+}
+
+.next-button:hover,
+.start-button:hover {
+  background-color: silver;
+  color: #000;
+}
+
+.hidden {
+  display: none;
 }

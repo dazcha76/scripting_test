@@ -4,15 +4,21 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link rel='stylesheet' type='text/css' href='style.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <title>Scripting Test</title>
 </head>
 <body>
-  <h1 class='instructions'>Player 1 - Choose a character:</h1>
+  <h1 class='player1 animated fadeInDown delay-1s'>Player 1 - Choose a character:</h1>
+  <h1 class='player2 hidden'>Player 2 - Choose a character:</h1>
+  <h1 class='play hidden'>Play!</h1>
 
   <div id='character-wrapper'></div>
 
-  <div class='next-button'>Next</div>
-
+  <div class='button-wrapper'>
+    <div class='next-button hidden'>Next</div>
+    <div class='start-button hidden'>Start</div>
+  </div>
+  
   <script src='main.js'></script>
 </body>
 </html>
